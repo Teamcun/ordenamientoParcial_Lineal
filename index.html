@@ -76,9 +76,23 @@
   <div class="row">
     <div class="col-md-6">
         <h3 class="section-title">Plan Lineal</h3>
+        <!-- Imagen clickeable -->
+        <img src="carbon1.png" alt="Ilustración del Plan Lineal" class="img-fluid rounded mb-3" data-bs-toggle="modal" data-bs-target="#imageModal">
 
-        <img src="carbon1.png" alt="Ilustración del Plan Lineal" class="img-fluid rounded mb-3">
-
+        <!-- Modal para mostrar la imagen ampliada -->
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel">Plan Lineal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="carbon1.png" alt="Ilustración del Plan Lineal" class="img-fluid">
+                </div>
+                </div>
+            </div>
+        </div>
         <p>
         <strong>¿Cómo funciona?</strong><br>
         En el <em>Plan Lineal</em>, las tareas se ejecutan <strong>una tras otra</strong>, en el orden en que aparecen. 
@@ -125,7 +139,23 @@
    <!-- Plan Parcial -->
 <div class="col-md-6">
     <h3 class="section-title">Plan Parcial (con dependencias)</h3>
-    <img src="carbon2.png" alt="Ilustración del Plan Lineal" class="img-fluid rounded mb-3">
+    <!-- Imagen clickeable para el Plan Parcial -->
+    <img src="carbon2.png" alt="Ilustración del Plan Parcial" class="img-fluid rounded mb-3" data-bs-toggle="modal" data-bs-target="#imageModalParcial">
+
+    <!-- Modal para mostrar la imagen ampliada del Plan Parcial -->
+    <div class="modal fade" id="imageModalParcial" tabindex="-1" aria-labelledby="imageModalLabelParcial" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="imageModalLabelParcial">Imagen Ampliada</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+            <img src="carbon2.png" alt="Ilustración del Plan Parcial" class="img-fluid">
+        </div>
+        </div>
+    </div>
+    </div>
     <p>
       <strong>¿Cómo funciona?</strong><br>
       En el <em>Plan Parcial</em>, las tareas se ejecutan según sus <strong>dependencias previas</strong>. 
@@ -178,6 +208,12 @@
     <button id="reiniciarBtn" class="btn btn-secondary">Reiniciar Tareas</button>
   </div>  
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap 5 JS (con Popper.js para modales) -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
 <script src="script.js"></script>
 
 </body>
